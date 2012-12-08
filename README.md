@@ -1,5 +1,11 @@
 # Slick Integration Example #
 
+## Usage ##
+
+Currently there are only tests. Start ```play test```.
+
+Also have a look at the [schema generator](https://github.com/danieldietrich/slick-integration-example/blob/master/test/EvolutionsGenerator.scala). Call it as Scala standalone app.
+
 ## Dependencies ##
 
 project/Build.scala
@@ -48,8 +54,8 @@ slick {
 
 ## Model Implementation ##
 
-_see app/models_
+see [app/models](https://github.com/danieldietrich/slick-integration-example/tree/master/app/models)
 
 ## Example Model Usage ##
 
-_see test/DomainModelSpec.scala_
+see [test/DomainModelSpec.scala](https://github.com/danieldietrich/slick-integration-example/blob/master/test/DomainModelSpec.scala)
