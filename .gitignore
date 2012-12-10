@@ -5,6 +5,9 @@ target
 tmp
 .history
 dist
+/.cache
+/.target
+/bin
 /.idea
 /*.iml
 /out

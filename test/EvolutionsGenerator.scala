@@ -6,7 +6,7 @@ object EvolutionGenerator extends App {
   import play.api.test.Helpers._
 
   running(FakeApplication(additionalConfiguration = inMemoryDatabase() ++
-      Map("slick.default.driver" -> "scala.slick.driver.MySQLDriver", "evolutionplugin" -> "disabled"))) {
+      Map("db.default.slick.driver" -> "scala.slick.driver.MySQLDriver", "evolutionplugin" -> "disabled"))) {
 
     val evolution = (
       """|# --- !Ups
