@@ -27,27 +27,18 @@ conf/application.conf
 ```scala
 db {
   default {
+    slick.driver=scala.slick.driver.MySQLDriver
     driver=com.mysql.jdbc.Driver
     url="jdbc:mysql://localhost/slicktest?characterEncoding=UTF-8"
     user="root"
     password=""
   }
   test {
+    slick.driver=scala.slick.driver.H2Driver
     driver=org.h2.Driver
     url="jdbc:h2:mem:slicktest"
     user="sa"
     password=""
-  }
-}
-```
-
-```scala
-slick {
-  default {
-    driver=scala.slick.driver.MySQLDriver
-  }
-  test {
-    driver=scala.slick.driver.H2Driver
   }
 }
 ```
